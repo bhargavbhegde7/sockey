@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.bhargav.webs'
+version = '0.0.1'
+
+description = """WebSockTry Maven Webapp"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+    providedCompile group: 'javax', name: 'javaee-api', version:'7.0'
+    providedCompile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+}
